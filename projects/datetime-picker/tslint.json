@@ -1,17 +1,40 @@
 {
-  "extends": "../../tslint.json",
-  "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "ngxMat",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "ngx-mat",
-      "kebab-case"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom"
     ]
+  },
+  "angularCompilerOptions": {
+    "noImplicitAny": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictPropertyInitialization": false,
+    "strictTemplates": false,
+    "strictNullChecks": false,
+    "noImplicitReturns": false
   }
 }
